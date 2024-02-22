@@ -73,5 +73,35 @@ function splitSentence(value: string) {
     return result;
   }
   
- 
+  // // Desafio 9
+  function encode(string: string) {
+    let result: string = "";
+  
+    string.split(" ");
+  
+    for (let i = 0; i < string.length; i += 1) {
+      result = string
+        .replace(/a/g, "1")
+        .replace(/e/g, "2")
+        .replace(/i/g, "3")
+        .replace(/o/g, "4")
+        .replace(/u/g, "5");
+    }
+    return result;
+  }
+  
+  function decode(string: string) {
+    let result: string = "";
+  
+    for (let i = 0; i < string.length; i += 1) {
+      result = string
+        .replace(/1/g, "a")
+        .replace(/2/g, "e")
+        .replace(/3/g, "i")
+        .replace(/4/g, "o")
+        .replace(/5/g, "u");
+    }
+    return result;
+  }
+
   
