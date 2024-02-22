@@ -18,4 +18,9 @@ function splitSentence(value: string) {
     return `${array[array.length - 1]}, ${array[0]}`;
   }
   
+  // Desafio 5
+  function footballPoints(wins: number, tie: number) {
+    return wins * 3 + tie;
+  }
+  
   
