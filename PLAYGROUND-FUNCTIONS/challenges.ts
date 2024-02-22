@@ -12,3 +12,10 @@ function calcArea(height: number, weight: number) {
 function splitSentence(value: string) {
   return value.split(" ");
 }
+
+ // Desafio 4
+ function concatName(array: Array<string>) {
+    return `${array[array.length - 1]}, ${array[0]}`;
+  }
+  
+  
