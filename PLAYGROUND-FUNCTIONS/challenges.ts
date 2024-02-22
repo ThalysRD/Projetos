@@ -23,4 +23,25 @@ function splitSentence(value: string) {
     return wins * 3 + tie;
   }
   
+  // Desafio 6
+  function highestCount(array: Array<number>) {
+    let numMax = 0;
+    let count = 0;
+  
+    for (let i = 0; i < array.length; i += 1) {
+      if (Math.abs(array[i]) >= numMax) {
+        numMax = array[i];
+      }
+    }
+  
+    for (let i = 0; i < array.length; i += 1) {
+      if (numMax === array[i]) {
+        count += 1;
+      }
+    }
+  
+    return count;
+  }
+  
+ 
   
